@@ -9,6 +9,10 @@ package com.fuzis.lab5;
 
 import com.fuzis.lab5.Characters.FrekenBock;
 import com.fuzis.lab5.Characters.Karlson;
+import com.fuzis.lab5.GeneralObjects.DefaultCartoonPersonCharacter;
+
+import java.util.Arrays;
+import java.util.Collection;
 
 /**
  * Нуждается ли Main в пояснении¿
@@ -25,6 +29,5 @@ public class Main {
         if(args.length >= 1) CharacterCollection.fileName = args[0];
         Interactive.start();
     }
-
 
 }

@@ -55,3 +55,7 @@ Animecharacter
 はい
 
 Subaru:Positive, Ram:positive, Felix:neutral, Emilia:neutral
+
+execute_script 2.script
+show
+execute_script 2.script

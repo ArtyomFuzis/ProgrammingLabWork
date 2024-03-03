@@ -128,7 +128,7 @@ public class CharacterCollection
      * Удалить персонажа с определенным id, если не найден - ничего не делает
      * @param id идентификатор персонажа для удаления
      */
-    public void deleteCharacter(String id){characters.remove(id);}
+    public DefaultCartoonPersonCharacter deleteCharacter(String id){return characters.remove(id);}
     private final Date init_date;
 
     /**

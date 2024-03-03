@@ -1,4 +1,4 @@
-package com.fuzis.lab5.annotations;
+package com.fuzis.lab5.Annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

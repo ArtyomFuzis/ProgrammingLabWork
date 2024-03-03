@@ -107,6 +107,54 @@ public class DefaultCartoonPersonCharacter implements IPersonCharacter,Comparabl
         return popularity;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSex(Sex sex) {
+        this.sex = sex;
+    }
+
+    public void setQuote(String quote) {
+        this.quote = quote;
+    }
+
+    public void setOpinions(Map<String, Opinion> opinions) {
+        this.opinions = opinions;
+    }
+
+    public void setAdditionalNames(List<String> additionalNames) {
+        this.additionalNames = additionalNames;
+    }
+
+    public void setHeight(Double height) {
+        this.height = height;
+    }
+
+    public void setWeight(Double weight) {
+        this.weight = weight;
+    }
+
+    public void setAnimeCharacter(Boolean animeCharacter) {
+        isAnimeCharacter = animeCharacter;
+    }
+
+    public void setPopularity(Popularity popularity) {
+        this.popularity = popularity;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setHealth(Integer health) {
+        this.health = health;
+    }
+
+    public void setAge(Double age) {
+        this.age = age;
+    }
+
     public String getDescription() {
         return description;
     }
