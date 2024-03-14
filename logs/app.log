@@ -1,878 +1,246 @@
-14:47:07 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
-14:47:11 INFO  c.f.p.Server.ServerExecutionModule -- Connected2
-14:47:11 INFO  c.f.p.Server.ServerExecutionModule -- Connected4
-14:47:11 ERROR c.f.p.Server.ServerExecutionModule -- Connection error: Connection reset
-14:47:11 INFO  c.f.p.Server.ServerExecutionModule -- Connected3
-14:49:18 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
-14:49:21 INFO  c.f.p.Server.ServerExecutionModule -- Connected2
-14:49:21 INFO  c.f.p.Server.ServerExecutionModule -- Connected4
-14:49:21 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-14:49:22 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-14:49:22 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-14:49:22 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-14:49:22 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-14:49:22 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-14:49:22 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-14:49:22 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-14:49:22 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-14:49:22 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-14:49:22 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-14:49:22 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-14:49:22 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-14:49:22 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-14:49:22 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-14:49:22 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-14:49:22 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-14:49:22 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-14:49:22 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-14:49:22 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:00:32 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
-15:00:34 INFO  c.f.p.Server.ServerExecutionModule -- Connected2
-15:00:34 INFO  c.f.p.Server.ServerExecutionModule -- Connected4
-15:00:34 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:00:34 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:00:34 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:00:34 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:00:34 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:00:34 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:00:34 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:00:34 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:00:34 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:00:34 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:00:34 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:00:34 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:00:34 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:00:34 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:00:34 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:00:34 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:00:34 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:00:34 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:00:46 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:00:46 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:01:30 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
-15:01:32 INFO  c.f.p.Server.ServerExecutionModule -- Connected2
-15:01:32 INFO  c.f.p.Server.ServerExecutionModule -- Connected4
-15:01:32 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:01:32 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:01:32 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:01:32 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:01:32 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:01:32 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:01:32 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:01:32 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:01:32 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:01:32 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:01:32 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:01:32 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:01:32 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:01:32 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:01:32 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:01:32 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:01:32 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:01:32 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:01:32 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:05:05 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
-15:05:08 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:05:08 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:05:08 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:05:08 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:05:08 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:05:08 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:05:08 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:05:08 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:05:08 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:05:08 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:05:08 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:05:08 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:05:08 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:05:08 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:05:08 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:05:08 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:05:08 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:05:08 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:05:08 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:05:08 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:05:08 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:06:28 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
-15:06:30 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:06:30 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:06:30 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:06:30 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:06:30 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:06:30 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:06:30 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:06:30 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:06:30 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:06:30 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:06:30 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:06:30 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:06:30 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:06:30 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:06:30 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:06:30 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:06:30 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:06:30 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:06:30 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:06:31 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:06:31 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:12:13 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:12:13 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:12:13 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:13 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:13 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:12:13 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:12:13 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:13 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:13 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:13 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:13 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:12:13 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:12:13 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:12:13 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:12:13 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:12:13 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:13 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:13 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:12:13 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:13 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:12:13 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:12:18 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:12:18 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:12:18 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:18 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:18 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:12:18 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:12:18 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:18 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:18 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:18 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:18 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:12:18 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:12:18 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:12:18 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:12:18 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:12:18 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:18 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:18 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:12:18 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:19 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:12:19 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:12:25 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:12:25 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:12:25 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:25 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:25 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:12:25 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:12:25 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:25 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:25 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:25 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:25 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:12:25 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:12:25 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:12:25 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:12:25 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:12:25 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:25 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:25 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:12:25 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:26 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:12:26 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:12:31 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:12:31 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:12:31 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:31 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:31 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:12:31 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:12:31 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:31 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:31 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:31 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:31 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:12:31 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:12:31 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:12:31 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:12:31 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:12:31 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:31 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:31 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:12:31 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:31 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:12:31 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:12:37 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:12:37 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:12:37 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:37 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:37 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:12:37 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:12:37 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:37 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:37 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:37 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:37 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:12:37 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:12:37 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:12:37 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:12:37 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:12:37 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:37 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:37 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:12:37 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:37 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:12:37 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:12:45 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:12:45 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:12:45 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:45 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:45 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:12:45 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:12:45 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:45 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:45 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:45 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:45 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:12:45 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:12:45 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:12:45 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:12:45 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:12:45 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:45 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:45 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:12:45 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:46 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:12:46 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:12:53 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:12:53 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:12:53 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:53 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:53 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:12:53 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:12:53 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:53 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:53 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:53 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:53 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:12:53 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:12:53 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:12:53 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:12:53 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:12:53 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:53 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:53 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:12:53 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:53 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:12:53 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:12:58 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:12:58 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:12:58 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:58 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:58 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:12:58 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:12:58 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:58 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:58 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:58 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:12:58 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:12:58 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:12:58 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:12:58 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:12:58 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:12:58 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:58 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:58 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:12:58 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:12:58 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:12:58 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:13:03 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:13:03 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:13:03 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:03 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:03 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:13:03 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:13:03 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:03 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:03 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:03 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:03 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:13:03 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:13:03 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:13:03 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:13:03 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:13:03 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:03 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:03 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:13:03 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:04 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:13:04 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:13:11 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:13:11 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:13:11 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:11 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:11 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:13:11 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:13:11 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:11 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:11 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:11 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:11 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:13:11 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:13:11 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:13:11 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:13:11 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:13:11 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:11 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:11 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:13:11 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:12 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:13:12 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:13:19 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:13:19 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:13:19 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:19 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:19 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:13:19 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:13:19 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:19 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:19 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:19 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:19 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:13:19 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:13:19 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:13:19 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:13:19 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:13:19 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:19 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:19 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:13:19 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:20 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:13:20 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:13:44 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:13:44 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:13:44 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:44 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:44 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:13:44 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:13:44 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:44 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:44 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:44 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:44 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:13:44 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:13:44 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:13:44 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:13:44 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:13:44 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:44 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:44 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:13:44 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:45 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:13:45 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:13:50 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:13:50 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:13:50 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:50 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:50 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:13:50 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:13:50 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:50 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:50 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:50 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:50 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:13:50 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:13:50 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:13:50 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:13:50 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:13:50 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:50 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:50 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:13:50 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:50 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:13:50 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:13:58 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:13:58 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:13:58 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:58 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:58 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:13:58 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:13:58 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:58 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:58 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:58 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:13:58 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:13:58 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:13:58 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:13:58 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:13:58 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:13:58 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:58 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:58 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:13:58 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:13:58 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:13:58 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:14:05 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:14:05 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:14:05 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:14:05 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:14:05 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:14:05 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:14:05 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:14:05 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:14:05 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:14:05 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:14:05 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:14:05 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:14:05 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:14:05 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:14:05 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:14:05 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:14:05 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:14:05 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:14:05 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:14:06 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:14:06 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:15:23 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
-15:15:26 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:15:26 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:15:27 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:15:27 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:15:27 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:15:27 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:15:27 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:15:27 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:15:27 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:15:27 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:15:27 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:15:27 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:15:27 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:15:27 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:15:27 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:15:27 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:15:27 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:15:27 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:15:27 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:14 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:16:14 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:16:26 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:16:26 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:16:26 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:26 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:26 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:16:26 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:16:26 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:16:26 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:16:26 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:16:26 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:16:26 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:16:26 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:16:26 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:16:26 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:16:26 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:16:26 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:26 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:26 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:16:26 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:30 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:16:30 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:16:35 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:16:35 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:16:35 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:35 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:35 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:16:35 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:16:35 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:16:35 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:16:35 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:16:35 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:16:35 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:16:35 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:16:35 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:16:35 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:16:35 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:16:35 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:35 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:35 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:16:35 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:35 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:16:35 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:16:40 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:16:40 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:16:40 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:40 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:40 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:16:40 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:16:40 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:16:40 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:16:40 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:16:40 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:16:40 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:16:40 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:16:40 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:16:40 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:16:40 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:16:40 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:40 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:40 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:16:40 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:41 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:16:41 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:16:48 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:16:48 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:16:48 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:48 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:48 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:16:48 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:16:48 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:16:48 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:16:48 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:16:48 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:16:48 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:16:48 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:16:48 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:16:48 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:16:48 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:16:48 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:48 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:48 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:16:48 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:52 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:16:52 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:16:57 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:16:57 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:16:57 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:57 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:57 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:16:57 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:16:57 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:16:57 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:16:57 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:16:57 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:16:57 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:16:57 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:16:57 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:16:57 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:16:57 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:16:57 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:57 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:16:57 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:16:57 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:01 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:17:01 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:17:05 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:17:05 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:17:05 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:05 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:05 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:17:05 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:17:05 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:17:05 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:17:05 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:17:05 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:17:05 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:17:05 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:17:05 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:17:05 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:17:05 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:17:05 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:05 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:05 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:17:05 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:08 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:17:08 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:17:18 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:17:18 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:17:18 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:18 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:18 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:17:18 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:17:18 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:17:18 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:17:18 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:17:18 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:17:18 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:17:18 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:17:18 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:17:18 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:17:18 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:17:18 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:18 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:18 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:17:18 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:18 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:17:18 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:17:25 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:17:25 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:17:25 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:25 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:25 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:17:25 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:17:25 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:17:25 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:17:25 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:17:25 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:17:25 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:17:25 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:17:25 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:17:25 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:17:25 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:17:25 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:25 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:25 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:17:25 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:32 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:17:32 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:17:37 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:17:37 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:17:37 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:37 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:37 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:17:37 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:17:37 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:17:37 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:17:37 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:17:37 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:17:37 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:17:37 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:17:37 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:17:37 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:17:37 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:17:37 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:37 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:37 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:17:37 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:17:37 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:17:37 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:20:28 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
-15:20:30 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:20:30 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:20:30 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:20:30 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:20:30 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:20:30 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:20:30 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:20:30 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:20:30 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:20:30 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:20:30 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:20:30 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:20:30 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:20:30 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:20:30 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:20:30 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:20:30 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:20:30 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:20:30 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:20:30 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:20:30 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:21:16 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
-15:21:18 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:21:18 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:21:18 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:21:18 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:21:18 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:21:18 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:21:18 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:21:18 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:21:18 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:21:18 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:21:18 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:21:18 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:21:18 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:21:18 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:21:18 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:21:18 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:21:18 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:21:18 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:21:18 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:21:19 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:21:19 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:21:24 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:21:24 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:21:24 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:21:24 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:21:24 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:21:24 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:21:24 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:21:24 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:21:24 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:21:24 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:21:24 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:21:24 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:21:24 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:21:24 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:21:24 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:21:24 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:21:24 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:21:24 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:21:24 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:21:25 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:21:25 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:59:49 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:59:49 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:59:49 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:59:49 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:59:49 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:59:49 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:59:49 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:59:49 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:59:49 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:59:49 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:59:49 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:59:49 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:59:49 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:59:49 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:59:49 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:59:49 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:59:49 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:59:49 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:59:49 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:59:49 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:59:49 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:59:54 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:59:54 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:59:54 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:59:54 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:59:54 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:59:54 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:59:54 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:59:54 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:59:54 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:59:54 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:59:54 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:59:54 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:59:54 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:59:54 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:59:54 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:59:54 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:59:54 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:59:54 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:59:54 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:59:55 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:59:55 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-15:59:58 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-15:59:58 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-15:59:58 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:59:58 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:59:58 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-15:59:58 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-15:59:58 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:59:58 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:59:58 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:59:58 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-15:59:58 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:59:58 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:59:58 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-15:59:58 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-15:59:58 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-15:59:58 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:59:58 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:59:58 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
-15:59:58 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-15:59:58 ERROR c.f.p.Server.ServerReadingModule -- Connection error: Connection reset
-15:59:58 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-17:09:14 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
-17:09:19 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-17:09:19 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-17:09:19 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-17:09:19 ERROR c.f.p.Server.ServerReadingModule -- Connection error: invalid type code: AC
-17:09:19 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-17:15:04 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-17:15:04 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-17:15:04 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-17:15:04 ERROR c.f.p.Server.ServerReadingModule -- Connection error: invalid type code: AC
-17:15:04 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-17:16:39 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-17:16:39 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-17:16:39 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-17:16:39 ERROR c.f.p.Server.ServerReadingModule -- Connection error: invalid type code: AC
-17:16:39 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-17:17:04 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-17:17:04 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-17:17:04 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-17:17:04 ERROR c.f.p.Server.ServerReadingModule -- Connection error: invalid type code: AC
-17:17:04 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-17:17:55 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-17:17:55 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-17:17:55 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-17:17:55 ERROR c.f.p.Server.ServerReadingModule -- Connection error: invalid type code: AC
-17:17:55 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-17:18:46 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-17:18:46 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-17:18:46 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-17:18:46 ERROR c.f.p.Server.ServerReadingModule -- Connection error: invalid type code: AC
-17:18:46 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-17:19:20 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-17:19:20 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-17:19:20 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-17:19:20 ERROR c.f.p.Server.ServerReadingModule -- Connection error: invalid type code: AC
-17:19:20 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-17:23:12 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-17:23:12 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-17:23:12 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-17:23:12 ERROR c.f.p.Server.ServerReadingModule -- Connection error: invalid type code: AC
-17:23:12 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-17:24:16 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-17:24:16 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-17:24:16 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-17:24:16 ERROR c.f.p.Server.ServerReadingModule -- Connection error: invalid type code: AC
-17:24:16 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-17:28:15 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-17:28:15 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-17:28:15 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-17:28:15 ERROR c.f.p.Server.ServerReadingModule -- Connection error: invalid type code: AC
-17:28:15 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-17:28:43 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-17:28:43 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-17:28:43 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-17:28:43 ERROR c.f.p.Server.ServerReadingModule -- Connection error: invalid type code: AC
-17:28:43 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-17:31:27 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-17:31:27 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-17:31:27 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-17:31:27 ERROR c.f.p.Server.ServerReadingModule -- Connection error: invalid type code: AC
-17:31:27 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-17:33:29 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
-17:33:33 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-17:33:33 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-17:33:33 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-17:33:33 ERROR c.f.p.Server.ServerReadingModule -- Connection error: invalid type code: AC
-17:33:33 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-17:38:35 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
-17:38:39 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-17:38:39 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-17:38:39 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-17:38:39 ERROR c.f.p.Server.ServerReadingModule -- Connection error: invalid type code: AC
-17:38:39 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-17:47:25 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
-17:47:30 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-17:47:30 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-17:47:30 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-17:47:30 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-17:47:30 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-17:47:30 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-17:47:30 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-17:47:30 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-17:47:30 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-17:47:30 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-17:47:30 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-17:47:30 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-17:47:30 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-17:47:30 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-17:47:30 ERROR c.f.p.Server.ServerReadingModule -- Connection error: invalid type code: AC
-17:47:30 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
-17:51:02 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
-17:51:06 INFO  c.f.p.Server.ServerExecutionModule -- Connected
-17:51:06 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
-17:51:06 INFO  c.f.p.Server.ServerReadingModule -- Got Request
-17:51:06 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
-17:51:06 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
-17:51:06 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-17:51:06 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-17:51:06 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-17:51:06 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
-17:51:06 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-17:51:06 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-17:51:06 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
-17:51:06 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
-17:51:06 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
-17:51:06 ERROR c.f.p.Server.ServerReadingModule -- Waiting for data: invalid type code: AC
-17:51:06 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
+10:08:44 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
+10:08:48 INFO  c.f.p.Server.ServerExecutionModule -- Connected
+10:08:48 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
+10:08:48 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:08:48 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:08:48 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
+10:08:48 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
+10:08:48 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:08:48 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:08:48 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:08:48 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:08:48 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+10:08:48 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+10:08:48 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+10:08:48 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+10:08:48 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
+10:08:48 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:08:48 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:08:48 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
+10:08:48 ERROR c.f.p.Server.ServerReadingModule -- Waiting for data: Connection reset
+10:08:48 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
+10:10:20 INFO  c.f.p.Server.ServerExecutionModule -- Connected
+10:10:20 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
+10:10:20 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:10:20 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:10:20 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
+10:10:20 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
+10:10:20 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:10:20 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:10:20 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:10:20 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:10:20 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+10:10:20 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+10:10:20 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+10:10:20 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+10:10:20 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
+10:10:20 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:10:20 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:10:20 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
+10:10:20 ERROR c.f.p.Server.ServerReadingModule -- Waiting for data: Connection reset
+10:10:20 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
+10:11:40 INFO  c.f.p.Server.ServerExecutionModule -- Connected
+10:11:40 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
+10:11:40 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:11:40 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:11:40 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
+10:11:40 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
+10:11:40 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:11:40 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:11:40 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:11:40 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:11:40 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+10:11:40 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+10:11:40 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+10:11:40 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+10:11:40 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
+10:11:40 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:11:40 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:11:40 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
+10:11:40 ERROR c.f.p.Server.ServerReadingModule -- Waiting for data: Connection reset
+10:11:40 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
+10:12:12 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
+10:12:19 INFO  c.f.p.Server.ServerExecutionModule -- Connected
+10:12:19 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
+10:12:19 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:12:19 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:12:19 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
+10:12:19 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
+10:12:19 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:12:19 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:12:19 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:12:19 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:12:19 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+10:12:19 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+10:12:19 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+10:12:19 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+10:12:19 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
+10:12:19 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:12:19 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:12:19 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
+10:12:19 ERROR c.f.p.Server.ServerReadingModule -- Waiting for data: Connection reset
+10:12:19 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
+10:14:58 INFO  c.f.p.Server.ServerExecutionModule -- Connected
+10:14:58 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
+10:14:58 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:14:58 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:14:58 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
+10:14:58 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
+10:14:58 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:14:58 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:14:58 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:14:58 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:14:58 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+10:14:58 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+10:14:58 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+10:14:58 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+10:14:58 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
+10:14:58 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:14:58 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:14:58 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
+10:14:59 ERROR c.f.p.Server.ServerReadingModule -- Waiting for data: Connection reset
+10:14:59 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
+10:16:27 INFO  c.f.p.Server.ServerExecutionModule -- Connected
+10:16:27 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
+10:16:27 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:16:27 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:16:27 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
+10:16:27 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
+10:16:27 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:16:27 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:16:27 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:16:27 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:16:27 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+10:16:27 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+10:16:27 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+10:16:27 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+10:16:27 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
+10:16:27 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:16:27 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:16:27 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
+10:16:27 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:16:27 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info123
+10:16:28 ERROR c.f.p.Server.ServerReadingModule -- Waiting for data: Connection reset
+10:16:28 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
+10:18:02 INFO  c.f.p.Server.ServerExecutionModule -- Connected
+10:18:02 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
+10:18:02 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:18:02 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:18:02 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
+10:18:02 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
+10:18:02 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:18:02 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:18:02 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:18:02 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:18:02 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+10:18:02 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+10:18:02 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+10:18:02 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+10:18:02 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
+10:18:02 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:18:02 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:18:02 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
+10:18:02 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:18:02 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info123
+10:18:02 ERROR c.f.p.Server.ServerReadingModule -- Waiting for data: Connection reset
+10:18:02 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
+10:18:22 INFO  c.f.p.Server.ServerExecutionModule -- Connected
+10:18:22 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
+10:18:22 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:18:22 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:18:22 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
+10:18:22 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
+10:18:22 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:18:22 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:18:22 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:18:22 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+10:18:22 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+10:18:22 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+10:18:22 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+10:18:22 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+10:18:22 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
+10:18:22 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:18:22 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:18:22 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
+10:18:22 INFO  c.f.p.Server.ServerReadingModule -- Got Request
+10:18:22 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info123
+10:18:22 ERROR c.f.p.Server.ServerReadingModule -- Waiting for data: Connection reset
+10:18:22 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
+17:14:19 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
+17:14:23 ERROR c.f.p.Server.ServerExecutionModule -- Connection error: invalid stream header: 01C9ACED
+17:14:47 ERROR c.f.p.Server.ServerExecutionModule -- Connection error: invalid stream header: 01C9ACED
+17:19:37 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
+17:19:38 ERROR c.f.p.Server.ServerExecutionModule -- Connection error: invalid stream header: 01C9ACED
+17:22:31 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
+17:22:34 ERROR c.f.p.Server.ServerExecutionModule -- Connection error: invalid stream header: 01C9ACED
+17:23:46 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
+17:23:48 ERROR c.f.p.Server.ServerExecutionModule -- Connection error: invalid stream header: 01C9ACED
+17:28:24 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
+17:28:30 INFO  c.f.p.Server.ServerExecutionModule -- Connected
+17:28:30 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
+17:28:30 INFO  c.f.p.Server.ServerExecutionModule -- Got Request
+17:28:30 INFO  c.f.p.Server.ServerExecutionModule -- Got Request
+17:28:30 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
+17:28:30 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
+17:28:30 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+17:28:30 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+17:28:30 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+17:28:30 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+17:28:30 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+17:28:30 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+17:28:30 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+17:28:30 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+17:28:30 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
+17:28:30 INFO  c.f.p.Server.ServerExecutionModule -- Got Request
+17:28:30 INFO  c.f.p.Server.ServerExecutionModule -- Got Request
+17:28:30 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
+17:28:30 INFO  c.f.p.Server.ServerExecutionModule -- Got Request
+17:28:30 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info123
+17:28:30 ERROR c.f.p.Server.ServerExecutionModule -- Connection reading error: Connection reset
+17:28:30 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
+17:28:57 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
+17:29:00 INFO  c.f.p.Server.ServerExecutionModule -- Connected
+17:29:00 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
+17:29:00 INFO  c.f.p.Server.ServerExecutionModule -- Got Request
+17:29:00 INFO  c.f.p.Server.ServerExecutionModule -- Got Request
+17:29:00 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
+17:29:00 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
+17:29:00 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+17:29:00 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+17:29:00 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+17:29:00 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+17:29:00 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+17:29:00 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+17:29:00 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+17:29:00 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+17:29:00 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
+17:29:00 INFO  c.f.p.Server.ServerExecutionModule -- Got Request
+17:29:00 INFO  c.f.p.Server.ServerExecutionModule -- Got Request
+17:29:00 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
+17:29:00 INFO  c.f.p.Server.ServerExecutionModule -- Got Request
+17:29:00 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info123
+17:29:00 ERROR c.f.p.Server.ServerExecutionModule -- Connection reading error: Connection reset
+17:29:00 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit
+23:41:20 INFO  c.f.p.Server.ServerExecutionModule -- Server Socket created
+23:41:23 INFO  c.f.p.Server.ServerExecutionModule -- Connected
+23:41:24 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode server started
+23:41:24 INFO  c.f.p.Server.ServerExecutionModule -- Got Request
+23:41:24 INFO  c.f.p.Server.ServerExecutionModule -- Got Request
+23:41:24 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 1.script
+23:41:24 INFO  c.f.p.Server.ServerExecutionModule -- Successful clearing
+23:41:24 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+23:41:24 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+23:41:24 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+23:41:24 INFO  c.f.p.Server.ServerExecutionModule -- Successful add
+23:41:24 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+23:41:24 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+23:41:24 INFO  c.f.p.Server.ServerExecutionModule -- Start executing script: 2.script
+23:41:24 ERROR c.f.p.Server.ServerExecutionModule -- Script is already executing
+23:41:24 INFO  c.f.p.Server.ServerExecutionModule -- End script execution
+23:41:24 INFO  c.f.p.Server.ServerExecutionModule -- Got Request
+23:41:24 INFO  c.f.p.Server.ServerExecutionModule -- Got Request
+23:41:24 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info
+23:41:24 INFO  c.f.p.Server.ServerExecutionModule -- Got Request
+23:41:24 INFO  c.f.p.Server.ServerExecutionModule -- Got message: info123
+23:41:24 ERROR c.f.p.Server.ServerExecutionModule -- Connection reading error: Connection reset
+23:41:24 INFO  c.f.p.Server.ServerExecutionModule -- Interactive mode exit

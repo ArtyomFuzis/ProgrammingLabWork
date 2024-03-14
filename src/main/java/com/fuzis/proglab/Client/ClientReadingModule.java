@@ -5,56 +5,45 @@ import com.fuzis.proglab.AppData;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
-import java.io.StreamCorruptedException;
 import java.nio.ByteBuffer;
-import java.nio.channels.SelectionKey;
-import java.nio.channels.Selector;
-import java.util.Arrays;
-import java.util.Set;
+import java.util.ArrayList;
 
 public class ClientReadingModule {
-    public static AppData.TransferData read()
-    {
-        return read(20000);
-    }
-    public static AppData.TransferData read(int capacity) {
+    public static AppData.TransferData read() {
         try {
-            var bb = ByteBuffer.allocate(capacity);
-            Selector selector = Selector.open();
-            ClientConnectionModule.socket.register(selector, SelectionKey.OP_READ);
-            AppData.TransferData req = null;
-            while (req == null) {
-                try {
-                    System.out.println("aasas2");
-                    selector.select();
-                    System.out.println("aasas");
-                    Set<SelectionKey> keys = selector.selectedKeys();
-                    System.out.println(keys.size());
-                    for (var iter = keys.iterator(); iter.hasNext(); ) {
-                        SelectionKey key = iter.next();
-                        iter.remove();
-                        if (key.isValid()) {
-                            if (key.isReadable()) {
-                                ClientConnectionModule.socket.read(bb);
-                            }
-                        }
-                    }
-                    System.out.println(Arrays.toString(bb.array()));
-                    var bis = new ByteArrayInputStream(bb.array());
-                    var is = new ObjectInputStream(bis);
-                    req = (AppData.TransferData) is.readObject();
-                    selector.close();
-                } catch (StreamCorruptedException ex) {
-                    System.out.println("Wait for next data: " + ex.getLocalizedMessage());
+            ArrayList<ByteBuffer> arr = new ArrayList<>();
+            int whole_length = 0;
+            while (true) {
+                ByteBuffer code_b = ByteBuffer.allocate(1);
+                ClientConnectionModule.socket.read(code_b);
+                code_b.flip();
+                int code = code_b.get();
+                if (code == 1) {
+                    code_b.flip();
+                    ClientConnectionModule.socket.read(code_b);
+                    code_b.flip();
+                    int length = (code_b.get() + 255) % 255;
+                    ByteBuffer buf = ByteBuffer.allocate(length);
+                    ClientConnectionModule.socket.read(buf);
+                    arr.add(buf);
+                    whole_length += length;
+                } else if (code == 2) break;
+            }
+            byte[] res_arr = new byte[whole_length];
+            int i = 0;
+            for (var el : arr) {
+                for (var el2 : el.array()) {
+                    res_arr[i++] = el2;
                 }
             }
-            return req;
+            return (AppData.TransferData) (new ObjectInputStream(new ByteArrayInputStream(res_arr))).readObject();
         } catch (IOException ex) {
-            System.out.println("Connection error: " + ex.getLocalizedMessage());
-            return null;
-        } catch (ClassNotFoundException ex) {
-            System.out.println("Broken data error: " + ex.getLocalizedMessage());
-            return null;
+            ClientConnectionModule.error("Connection reading error: " + ex.getLocalizedMessage());
         }
+        catch (ClassNotFoundException ex)
+        {
+            ClientConnectionModule.error("Wrong data error: " + ex.getLocalizedMessage());
+        }
+        return null;
     }
 }

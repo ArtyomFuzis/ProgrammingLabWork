@@ -641,9 +641,32 @@ public class ServerExecutionModule {
                     if(annot == null)continue;
                     map.put(el.getName(),new AppData.InteractiveCommandData(annot.args(), annot.usage(), annot.help()));
                 }
-                ServerWritingModule.send(new AppData.TransferData(AppData.TransferPurpose.Return,
+                ServerWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Return,
                         "",3,map));
                 break;
+        }
+    }
+    public static String getNextInteractive() {
+        while (true) {
+            AppData.TransferData msg = ServerReadingModule.read();
+            if (msg == null) return null;
+            ServerConnectionModule.feedback("Got Request");
+            switch (msg.purpose()) {
+                case WriteLine:
+                case Write:
+                    ServerExecutionModule.msg_handle(msg);
+                    break;
+                case Cmd:
+                    if (msg.code() == 2) {
+                        return msg.body();
+                    } else {
+                        ServerExecutionModule.command_handle(msg);
+                    }
+                    break;
+                case Return:
+                    ServerConnectionModule.warn("Unexpected return: [" + msg.code() + "] " + msg.body());
+                    break;
+            }
         }
     }
     public static void start_interactive() {
@@ -652,7 +675,7 @@ public class ServerExecutionModule {
         Cmds cmd_class = new Cmds();
         feedback("Interactive mode server started");
         var in_scan = new FakeScanner((a)->{
-            var res = ServerReadingModule.getNextInteractive();
+            var res = getNextInteractive();
             if(res == null)a.close();
             a.add(res);
         });
