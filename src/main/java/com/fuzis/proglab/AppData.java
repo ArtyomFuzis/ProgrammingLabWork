@@ -8,8 +8,7 @@ public class AppData {
     public static final int PORT = 4352;
     public enum TransferPurpose
     {
-        Write,
-        WriteLine,
+        Msg,
         Cmd,
         Return
     }

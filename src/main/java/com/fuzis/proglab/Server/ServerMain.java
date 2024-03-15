@@ -6,6 +6,9 @@
  */
 package com.fuzis.proglab.Server;
 
+import com.fuzis.proglab.AppData;
+import com.fuzis.proglab.Client.ClientWritingModule;
+
 import java.io.*;
 
 public class ServerMain {
@@ -13,7 +16,7 @@ public class ServerMain {
         if (args.length >= 1) CharacterCollection.fileName = args[0];
         boolean listening_exit = false;
         while (!listening_exit) {
-            if(ServerConnectionModule.tryconnect()) ServerExecutionModule.start_interactive();
+            if (ServerConnectionModule.tryconnect()) ServerExecutionModule.start_interactive();
         }
     }
 }

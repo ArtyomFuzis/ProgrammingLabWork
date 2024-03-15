@@ -26,10 +26,24 @@ public class ClientConnectionModule {
         try {
             InetSocketAddress addr = new InetSocketAddress(InetAddress.getLocalHost(), AppData.PORT);
             socket = SocketChannel.open(addr);
+            socket.configureBlocking(false);
             return true;
         } catch (IOException ex) {
-            System.out.println("Connect error: " + ex.getLocalizedMessage());
+            error("Connection error: " + ex.getLocalizedMessage());
             return false;
+        }
+    }
+    public static void connect()
+    {
+        try {
+            while (!ClientConnectionModule.tryconnect()) {
+                System.out.println("Server not available, reconnecting");
+                Thread.sleep(1000);
+            }
+        }
+        catch (InterruptedException ex)
+        {
+            ClientExecutionModule.GoOutTheWindow();
         }
     }
 }

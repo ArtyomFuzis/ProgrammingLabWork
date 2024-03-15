@@ -1,6 +1,7 @@
 package com.fuzis.proglab.Server;
 
 
+import com.fuzis.proglab.Annotations.HiddenCommand;
 import com.fuzis.proglab.Annotations.InteractiveCommand;
 import com.fuzis.proglab.AppData;
 import com.fuzis.proglab.Enums.Opinion;
@@ -20,11 +21,13 @@ import java.util.function.Consumer;
 
 public class ServerExecutionModule {
     public static final Logger logger = LoggerFactory.getLogger(ServerExecutionModule.class);
+
     public static class FakeScanner {
         private Scanner scan;
         private LinkedList<String> arr;
         private boolean end = false;
         private Consumer<FakeScanner> insert_callback;
+
         public FakeScanner(Scanner _scan) {
             scan = _scan;
         }
@@ -33,24 +36,30 @@ public class ServerExecutionModule {
             arr = new LinkedList<>();
             insert_callback = _insert_callback;
         }
-        public void close(){end = true;}
-        public boolean hasNext()
-        {
-            if(scan != null)return scan.hasNext();
+
+        public void close() {
+            end = true;
+        }
+
+        public boolean hasNext() {
+            if (scan != null) return scan.hasNext();
             return !end;
         }
-        public void add(String a)
-        {
+
+        public void add(String a) {
             arr.add(a);
         }
+
         public String nextLine() {
-            if(scan != null)return scan.nextLine();
-            if(end)throw new IllegalStateException("FakeScanner is closed");
-            while(arr.isEmpty() && !end)
-            {
+            if (scan != null) return scan.nextLine();
+            if (end) throw new IllegalStateException("FakeScanner is closed");
+            while (arr.isEmpty() && !end) {
                 insert_callback.accept(this);
             }
-            if(end){exit= true; return "";}
+            if (end) {
+                exit = true;
+                return "";
+            }
             return arr.pop();
         }
 
@@ -59,24 +68,27 @@ public class ServerExecutionModule {
             if (this == o) return true;
             if (o == null || getClass() != o.getClass()) return false;
             FakeScanner that = (FakeScanner) o;
-            if(this.scan != null || that.scan != null) {
-                if(this.scan == null || that.scan == null) return false;
+            if (this.scan != null || that.scan != null) {
+                if (this.scan == null || that.scan == null) return false;
                 return this.scan.equals(that.scan);
             }
-            return this.arr.equals(that.arr) && this.end==that.end && this.insert_callback.equals(that.insert_callback);
+            return this.arr.equals(that.arr) && this.end == that.end && this.insert_callback.equals(that.insert_callback);
         }
     }
 
     public static void warn(String info) {
         logger.warn(info);
+        buffer.append("[ServerWARN] ").append(info).append("\n");
     }
 
     public static void feedback(String info) {
         logger.info(info);
+        buffer.append("[ServerINFO] ").append(info).append("\n");
     }
 
     public static void error(String info) {
         logger.error(info);
+        buffer.append("[ServerERROR] ").append(info).append("\n");
     }
 
     record ScriptData(FakeScanner file, String prev_key) {
@@ -88,6 +100,39 @@ public class ServerExecutionModule {
     public static Boolean exit = false;
     public static Boolean supress_inp_invite = false;
     public static FakeScanner scan;
+    public static void println_supress(Object a) {
+        if (supress_inp_invite) return;
+        println(a);
+    }
+
+    public static void print_supress(Object a) {
+        if (supress_inp_invite) return;
+        print(a);
+    }
+
+    static StringBuilder buffer = new StringBuilder();
+
+    public static void print(Object a) {
+        logger.trace("Added to response: " + a.toString());
+        buffer.append(a.toString());
+        //System.out.print(a);
+    }
+
+    public static void println(Object a) {
+        logger.trace("Added to response: " + a.toString());
+        buffer.append(a.toString()).append("\n");
+        //System.out.println(a);
+    }
+
+    public static void println() {
+        buffer.append("\n");
+        //System.out.println();
+    }
+
+    public static void send() {
+        ServerWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Return, buffer.toString(), 1, null));
+        buffer = new StringBuilder();
+    }
 
     public static class Cmds {
         public static class IDCharacter {
@@ -100,27 +145,9 @@ public class ServerExecutionModule {
             }
         }
 
-        public void println_supress(Object a) {
-            if (supress_inp_invite) return;
-            println(a);
-        }
 
-        public void print_supress(Object a) {
-            if (supress_inp_invite) return;
-            print(a);
-        }
 
-        public void print(Object a) {
-            System.out.print(a);
-        }
-
-        public void println(Object a) {
-            System.out.println(a);
-        }
-
-        public void println() {
-            System.out.println();
-        }
+        @HiddenCommand
         @InteractiveCommand(args = {0, 1}, usage = {"help - вывод справки по всем командам", "help <команда> - вывод справки по определенной команде"}, help = "Выводит справку по командам интерактивного режима")
         public void help(List<String> argc) {
             if (argc.isEmpty()) {
@@ -497,11 +524,13 @@ public class ServerExecutionModule {
             }
         }
 
+        @HiddenCommand
         @InteractiveCommand(args = {0}, usage = {"save - сохранить коллекцию в ранее указанный файл"}, help = "Сохраняет коллекцию")
         public void save(List<String> argc) {
             char_col.save();
         }
 
+        @HiddenCommand
         @InteractiveCommand(args = {0}, usage = {"exit_server - завершить работу интерактивного режима"}, help = "Осуществляет выход из программы/подпрограммы")
         public void exit_server(List<String> argc) {
             exit = true;
@@ -516,7 +545,7 @@ public class ServerExecutionModule {
 
         @InteractiveCommand(args = {1}, usage = {"remove_by_id <id> - удалить элемент с указанным id"}, help = "Удаляет указанный элемент")
         public void remove_by_id(List<String> argc) {
-            if (null == char_col.deleteCharacter(argc.get(0))) feedback("key not found");
+            if (null == char_col.deleteCharacter(argc.get(0))) error("key not found");
             else feedback("Successful remove");
         }
 
@@ -626,38 +655,38 @@ public class ServerExecutionModule {
             }
         }
     }
-    public static void msg_handle(AppData.TransferData msg)
-    {
-        ServerExecutionModule.feedback("Got message: " + msg.body());
+
+    public static void msg_handle(AppData.TransferData msg) {
+        ServerConnectionModule.feedback("Got message: " + msg.body());
     }
-    public static void command_handle(AppData.TransferData msg){
-        switch(msg.code())
-        {
+
+    public static void command_handle(AppData.TransferData msg) {
+        switch (msg.code()) {
             case 3:
                 var map = new HashMap<String, AppData.InteractiveCommandData>();
-                for(var el : Cmds.class.getMethods())
-                {
+                for (var el : Cmds.class.getMethods()) {
                     var annot = el.getAnnotation(InteractiveCommand.class);
-                    if(annot == null)continue;
-                    map.put(el.getName(),new AppData.InteractiveCommandData(annot.args(), annot.usage(), annot.help()));
+                    if (annot == null || el.getAnnotation(HiddenCommand.class) != null) continue;
+                    map.put(el.getName(), new AppData.InteractiveCommandData(annot.args(), annot.usage(), annot.help()));
                 }
                 ServerWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Return,
-                        "",3,map));
+                        "", 3, map));
                 break;
         }
     }
+
     public static String getNextInteractive() {
         while (true) {
             AppData.TransferData msg = ServerReadingModule.read();
+            ServerConnectionModule.feedback("Got Request: " + msg);
             if (msg == null) return null;
-            ServerConnectionModule.feedback("Got Request");
             switch (msg.purpose()) {
-                case WriteLine:
-                case Write:
+                case Msg:
                     ServerExecutionModule.msg_handle(msg);
                     break;
                 case Cmd:
                     if (msg.code() == 2) {
+
                         return msg.body();
                     } else {
                         ServerExecutionModule.command_handle(msg);
@@ -669,18 +698,20 @@ public class ServerExecutionModule {
             }
         }
     }
+
     public static void start_interactive() {
         exit = false;
         char_col = CharacterCollection.getInstance();
         Cmds cmd_class = new Cmds();
-        feedback("Interactive mode server started");
-        var in_scan = new FakeScanner((a)->{
+        ServerConnectionModule.feedback("Interactive mode server started");
+        var in_scan = new FakeScanner((a) -> {
             var res = getNextInteractive();
-            if(res == null)a.close();
+            if (res == null) a.close();
             a.add(res);
         });
         supress_inp_invite = false;
         while (scan == null || !scan.equals(in_scan)) {
+            if(scan != null)send();
             scan = in_scan;
             while (!exit && scan.hasNext()) {
                 String pre = scan.nextLine().trim();
@@ -705,16 +736,14 @@ public class ServerExecutionModule {
                 } catch (InvocationTargetException | IllegalAccessException e) {
                     error("Command execution error");
                 }
-                while(!scan.hasNext() && !exit)
-                {
-                    var prev =  executing_scripts.get(cur_script).prev_key;
-                    if(prev != null) {
+                if(scan.equals(in_scan))send();
+                while (!scan.hasNext() && !exit) {
+                    var prev = executing_scripts.get(cur_script).prev_key;
+                    if (prev != null) {
                         scan = executing_scripts.get(prev).file;
                         executing_scripts.remove(cur_script);
                         cur_script = prev;
-                    }
-                    else
-                    {
+                    } else {
                         executing_scripts.remove(cur_script);
                         cur_script = null;
                         feedback("End script execution");
@@ -723,6 +752,6 @@ public class ServerExecutionModule {
                 }
             }
         }
-        feedback("Interactive mode exit");
+        ServerConnectionModule.feedback("Interactive mode exit");
     }
 }

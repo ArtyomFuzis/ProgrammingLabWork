@@ -6,6 +6,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.nio.ByteBuffer;
+import java.util.Arrays;
 
 public class ClientWritingModule {
     public static void write(AppData.TransferData req)
@@ -17,14 +18,14 @@ public class ClientWritingModule {
             var data = ByteBuffer.wrap(ostr.toByteArray());
             final int b_size = 200;
 
-            for(int i = data.limit(); i > 0; i-=b_size+1)
+            for(int i = data.limit(); i > 0; i-=b_size)
             {
-                var arr = new byte[Math.min(b_size+1,i)+2];
-                for(int j = 2 ; j <=Math.min(b_size+1,i)+1;j++) {
+                var arr = new byte[Math.min(b_size,i)+2];
+                for(int j = 2 ; j <=Math.min(b_size,i)+1;j++) {
                     arr[j] = data.get();
                 }
                 arr[0]=1;
-                arr[1]=(byte)Math.min(b_size+1,i);
+                arr[1]=(byte)Math.min(b_size,i);
                 ClientConnectionModule.socket.write(ByteBuffer.wrap(arr));
             }
             ClientConnectionModule.socket.write(ByteBuffer.wrap(new byte[]{2}));
@@ -33,6 +34,8 @@ public class ClientWritingModule {
         catch (IOException ex)
         {
             ClientConnectionModule.error("Connection writing error: " + ex.getLocalizedMessage());
+            ClientConnectionModule.connect();
+            write(req);
         }
     }
 }

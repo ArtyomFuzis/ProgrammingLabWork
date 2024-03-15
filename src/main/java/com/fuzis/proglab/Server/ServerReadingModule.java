@@ -9,6 +9,7 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ServerReadingModule {
     public static void interrupt() {
@@ -24,7 +25,7 @@ public class ServerReadingModule {
             while (true) {
                 int code = ServerConnectionModule.is.read();
                 if (code == 1) {
-                    int length = (ServerConnectionModule.is.read() + 255) % 255;
+                    int length = (ServerConnectionModule.is.read() + 256) % 256;
                     var buf = new byte[length];
                     while (ServerConnectionModule.is.available() < length) {
                         interrupt();
@@ -41,8 +42,7 @@ public class ServerReadingModule {
                     res_arr[i++] = el2;
                 }
             }
-            var res = (AppData.TransferData) (new ObjectInputStream(new ByteArrayInputStream(res_arr))).readObject();
-            return res;
+            return (AppData.TransferData) (new ObjectInputStream(new ByteArrayInputStream(res_arr))).readObject();
         } catch (IOException ex) {
             ServerConnectionModule.error("Connection reading error: " + ex.getLocalizedMessage());
         } catch (ClassNotFoundException ex) {
