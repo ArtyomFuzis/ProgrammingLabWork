@@ -22,9 +22,10 @@ public class ClientConnectionModule {
     public static void error(String info) {
         System.out.println("[ERROR] " + info);
     }
+
     public static boolean tryconnect() {
         try {
-            InetSocketAddress addr = new InetSocketAddress(InetAddress.getLocalHost(), AppData.PORT);
+            var addr = new InetSocketAddress(AppData.ADRESS, AppData.PORT);
             socket = SocketChannel.open(addr);
             socket.configureBlocking(false);
             return true;

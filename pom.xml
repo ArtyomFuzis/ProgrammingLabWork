@@ -1,9 +1,9 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.fuzis.lab5</groupId>
-    <artifactId>Lab5</artifactId>
-    <version>0.0.1alpha</version>
+    <groupId>com.fuzis.proglab</groupId>
+    <artifactId>Lab6</artifactId>
+    <version>0.0.2alpha</version>
     <dependencies>
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>

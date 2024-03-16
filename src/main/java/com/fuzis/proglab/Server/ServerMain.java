@@ -7,6 +7,7 @@
 package com.fuzis.proglab.Server;
 
 import com.fuzis.proglab.AppData;
+import com.fuzis.proglab.Client.ClientConnectionModule;
 import com.fuzis.proglab.Client.ClientWritingModule;
 
 import java.io.*;
@@ -14,7 +15,16 @@ import java.io.*;
 public class ServerMain {
     public static void main(String[] args) {
         if (args.length >= 1) CharacterCollection.fileName = args[0];
-        //Runtime.getRuntime().addShutdownHook(new Thread(() -> CharacterCollection.getInstance().save(), "Shutdown"));
+        try {
+            if (args.length >= 2) AppData.PORT = Integer.getInteger(args[1]);
+            else AppData.PORT = 4352;
+        }
+        catch (ClassCastException ex)
+        {
+            ClientConnectionModule.error("Port not found, redirect to 4352");
+            AppData.PORT = 4352;
+        }
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> CharacterCollection.getInstance().save(), "Shutdown"));
         boolean listening_exit = false;
         while (!listening_exit) {
             if (ServerConnectionModule.tryconnect()) ServerExecutionModule.start_interactive();

@@ -2,10 +2,15 @@ package com.fuzis.proglab;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.HashMap;
 
 public class AppData {
-    public static final int PORT = 4352;
+    public static int PORT;
+    public static InetAddress ADRESS;
+
+
     public enum TransferPurpose
     {
         Msg,
