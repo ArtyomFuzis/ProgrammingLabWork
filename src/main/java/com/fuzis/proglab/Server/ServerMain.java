@@ -14,6 +14,7 @@ import java.io.*;
 public class ServerMain {
     public static void main(String[] args) {
         if (args.length >= 1) CharacterCollection.fileName = args[0];
+        //Runtime.getRuntime().addShutdownHook(new Thread(() -> CharacterCollection.getInstance().save(), "Shutdown"));
         boolean listening_exit = false;
         while (!listening_exit) {
             if (ServerConnectionModule.tryconnect()) ServerExecutionModule.start_interactive();

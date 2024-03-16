@@ -8,6 +8,7 @@ import com.fuzis.proglab.Enums.Opinion;
 import com.fuzis.proglab.Enums.Popularity;
 import com.fuzis.proglab.Enums.Sex;
 import com.fuzis.proglab.DefaultCartoonPersonCharacter;
+import com.fuzis.proglab.InteractiveInput;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,60 +22,6 @@ import java.util.function.Consumer;
 
 public class ServerExecutionModule {
     public static final Logger logger = LoggerFactory.getLogger(ServerExecutionModule.class);
-
-    public static class FakeScanner {
-        private Scanner scan;
-        private LinkedList<String> arr;
-        private boolean end = false;
-        private Consumer<FakeScanner> insert_callback;
-
-        public FakeScanner(Scanner _scan) {
-            scan = _scan;
-        }
-
-        public FakeScanner(Consumer<FakeScanner> _insert_callback) {
-            arr = new LinkedList<>();
-            insert_callback = _insert_callback;
-        }
-
-        public void close() {
-            end = true;
-        }
-
-        public boolean hasNext() {
-            if (scan != null) return scan.hasNext();
-            return !end;
-        }
-
-        public void add(String a) {
-            arr.add(a);
-        }
-
-        public String nextLine() {
-            if (scan != null) return scan.nextLine();
-            if (end) throw new IllegalStateException("FakeScanner is closed");
-            while (arr.isEmpty() && !end) {
-                insert_callback.accept(this);
-            }
-            if (end) {
-                exit = true;
-                return "";
-            }
-            return arr.pop();
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            FakeScanner that = (FakeScanner) o;
-            if (this.scan != null || that.scan != null) {
-                if (this.scan == null || that.scan == null) return false;
-                return this.scan.equals(that.scan);
-            }
-            return this.arr.equals(that.arr) && this.end == that.end && this.insert_callback.equals(that.insert_callback);
-        }
-    }
 
     public static void warn(String info) {
         logger.warn(info);
@@ -91,7 +38,7 @@ public class ServerExecutionModule {
         buffer.append("[ServerERROR] ").append(info).append("\n");
     }
 
-    record ScriptData(FakeScanner file, String prev_key) {
+    record ScriptData(InteractiveInput.FakeScanner file, String prev_key) {
     }
 
     public static HashMap<String, ScriptData> executing_scripts = new HashMap<>();
@@ -99,7 +46,8 @@ public class ServerExecutionModule {
     public static CharacterCollection char_col;
     public static Boolean exit = false;
     public static Boolean supress_inp_invite = false;
-    public static FakeScanner scan;
+    public static InteractiveInput.FakeScanner scan;
+    public static InteractiveInput.FakeScanner in_scan;
     public static void println_supress(Object a) {
         if (supress_inp_invite) return;
         println(a);
@@ -182,340 +130,69 @@ public class ServerExecutionModule {
             }
         }
 
-        public String name_interactive() {
-            println_supress("Введите имя персонажа");
-            String name = null;
-            boolean match = false;
-            while (!match) {
-                name = scan.nextLine();
-                if (name.matches("\\s*")) {
-                    println_supress("Воспринято как <null>");
-                    break;
-                }
-                match = name.matches("\\s*[a-zA-Zа-яА-ЯёЁ_!#@$0-9]+\\s*");
-                if (!match) {
-                    println_supress("Введенное значение не может быть именем, попробуйте ещё раз");
-                }
-            }
-            return name;
-        }
-
-        public Sex sex_interactive() {
-            println_supress("Введите пол персонажа");
-            print_supress("Возможные варианты ввода: ");
-            for (int i = 0; i < Sex.values().length; i++) {
-                if (i != Sex.values().length - 1) print_supress(Sex.values()[i] + ", ");
-                else println_supress(Sex.values()[i]);
-            }
-            Sex sex = null;
-            boolean match = false;
-            while (!match) {
-                String data = scan.nextLine();
-                if (data.matches("\\s*")) {
-                    println_supress("Воспринято как <null>");
-                    break;
-                }
-                try {
-                    data = data.trim();
-                    sex = Sex.valueOf(data.substring(0, 1).toUpperCase() + data.substring(1).toLowerCase(Locale.ROOT));
-                    match = true;
-                } catch (IllegalArgumentException ex) {
-                    println_supress("Введенное значение не может быть полом, попробуйте ещё раз");
-                }
-            }
-            return sex;
-        }
-
-        public String quote_interactive() {
-            println_supress("Введите цитату персонажа");
-            String quote = null;
-            boolean match = false;
-            while (!match) {
-                quote = scan.nextLine();
-                if (quote.matches("\\s*")) {
-                    println_supress("Воспринято как <null>");
-                    break;
-                }
-                match = quote.matches("(?:\\s*[a-zA-Zа-яА-Яё,Ё_.?\"'`!#@$0-9]+\\s*)+");
-                if (!match) {
-                    println_supress("Введенное значение не может быть цитатой, попробуйте ещё раз");
-                }
-            }
-            return quote;
-        }
-
-        public Double height_interactive() {
-            println_supress("Введите рост персонажа");
-            Double height = null;
-            boolean match = false;
-            while (!match) {
-                String data = scan.nextLine();
-                if (data.matches("\\s*")) {
-                    println_supress("Воспринято как <null>");
-                    break;
-                }
-                try {
-                    data = data.trim();
-                    height = Double.valueOf(data);
-                    match = true;
-                } catch (NumberFormatException ex) {
-                    println_supress("Введенное значение не может быть ростом, попробуйте ещё раз");
-                }
-            }
-            return height;
-        }
-
-        public Double weight_interactive() {
-            println_supress("Введите вес персонажа");
-            Double weight = null;
-            boolean match = false;
-            while (!match) {
-                String data = scan.nextLine();
-                if (data.matches("\\s*")) {
-                    println_supress("Воспринято как <null>");
-                    break;
-                }
-                try {
-                    data = data.trim();
-                    weight = Double.valueOf(data);
-                    match = true;
-                } catch (NumberFormatException ex) {
-                    println_supress("Введенное значение не может быть весом, попробуйте ещё раз");
-                }
-            }
-            return weight;
-        }
-
-        public Popularity popularity_interactive() {
-            println_supress("Введите популярность персонажа");
-            print_supress("Возможные варианты ввода: ");
-            for (int i = 0; i < Popularity.values().length; i++) {
-                if (i != Popularity.values().length - 1) print_supress(Popularity.values()[i] + ", ");
-                else println_supress(Popularity.values()[i]);
-            }
-            Popularity popul = null;
-            boolean match = false;
-            while (!match) {
-                String data = scan.nextLine();
-                if (data.matches("\\s*")) {
-                    println_supress("Воспринято как <null>");
-                    break;
-                }
-                try {
-                    data = data.trim();
-                    popul = Popularity.valueOf(data.substring(0, 1).toUpperCase() + data.substring(1).toLowerCase(Locale.ROOT));
-                    match = true;
-                } catch (IllegalArgumentException ex) {
-                    println_supress("Введенное значение не может быть популярностью, попробуйте ещё раз");
-                }
-            }
-            return popul;
-        }
-
-        public Double age_interactive() {
-            println_supress("Введите возраст персонажа");
-            Double age = null;
-            boolean match = false;
-            while (!match) {
-                String data = scan.nextLine();
-                if (data.matches("\\s*")) {
-                    println_supress("Воспринято как <null>");
-                    break;
-                }
-                try {
-                    data = data.trim();
-                    age = Double.valueOf(data);
-                    match = true;
-                } catch (NumberFormatException ex) {
-                    println_supress("Введенное значение не может быть возрастом, попробуйте ещё раз");
-                }
-            }
-            return age;
-        }
-
-        public String description_interactive() {
-            println_supress("Введите краткое описание персонажа (одна строка)");
-            String description = null;
-            boolean match = false;
-            while (!match) {
-                description = scan.nextLine();
-                if (description.matches("\\s*")) {
-                    println_supress("Воспринято как <null>");
-                    break;
-                }
-                match = description.matches("(?:\\s*[\\-a-zA-Zа-яА-ЯёЁ_,.?\"'`!#@$0-9]+\\s*)+");
-                if (!match) {
-                    println_supress("Введенное значение не может быть описанием, попробуйте ещё раз");
-                }
-            }
-            return description;
-        }
-
-        public Integer health_interactive() {
-            println_supress("Введите здоровье персонажа (целое число)");
-            Integer health = null;
-            boolean match = false;
-            while (!match) {
-                String data = scan.nextLine();
-                if (data.matches("\\s*")) {
-                    println_supress("Воспринято как <null>");
-                    break;
-                }
-                try {
-                    data = data.trim();
-                    health = Integer.valueOf(data);
-                    match = true;
-                } catch (NumberFormatException ex) {
-                    println_supress("Введенное значение не может быть здоровьем, попробуйте ещё раз");
-                }
-            }
-            return health;
-        }
-
-        public Boolean isAnimeCharacter_interactive() {
-            println_supress("Введите является ли данный персонажем аниме  (Да/Нет/Yes/No/はい/いいえ)");
-            Boolean isAnimeCharacter = null;
-            boolean match = false;
-            while (!match) {
-                String data = scan.nextLine();
-                if (data.matches("\\s*")) {
-                    println_supress("Воспринято как <null>");
-                    break;
-                }
-                match = data.toLowerCase(Locale.ROOT).matches("\\s*(?:да|yes|はい)\\s*");
-                if (match) {
-                    isAnimeCharacter = true;
-                    break;
-                }
-                match = data.toLowerCase(Locale.ROOT).matches("\\s*(?:нет|no|いいえ)\\s*");
-                if (match) isAnimeCharacter = false;
-                if (!match) {
-                    println_supress("Введенное значение не входит в Да/Нет/Yes/No/はい/いいえ, попробуйте ещё раз");
-                }
-            }
-            return isAnimeCharacter;
-        }
-
-        public List<String> additionalnames_interactive() {
-            println_supress("Введите дополнительные имена персонажа в строке через запятую");
-            ArrayList<String> additionalNames = null;
-            boolean match = false;
-            while (!match) {
-                String data = scan.nextLine();
-                if (data.matches("\\s*")) {
-                    println_supress("Воспринято как <null>");
-                    break;
-                }
-                match = data.matches("(?:\\s*[a-zA-Zа-яА-ЯёЁ_!#@$0-9]+\\s*,\\s*)*[a-zA-Zа-яА-ЯёЁ_!#@$0-9]+\\s*");
-                if (!match) {
-                    println_supress("Введенное значение не не соответствует формату ввода, попробуйте ещё раз");
-                    continue;
-                }
-                additionalNames = new ArrayList<>(Arrays.stream(data.trim().split("\\s*,\\s*")).toList());
-            }
-            return additionalNames;
-        }
-
-        public HashMap<String, Opinion> opinions_interactive() {
-            println_supress("Введите мнения персонажа о других персонажах(не обязательно находящихся в коллекции), в формате: <имя>:<отношение>,<имя2>:<отношение2>...");
-            print_supress("Возможные варианты ввода <отношение>: ");
-            for (int i = 0; i < Opinion.values().length; i++) {
-                if (i != Opinion.values().length - 1) print_supress(Opinion.values()[i] + ", ");
-                else println_supress(Opinion.values()[i]);
-            }
-            HashMap<String, Opinion> opinions = null;
-            boolean match = false;
-            while (!match) {
-                String data = scan.nextLine();
-                if (data.matches("\\s*")) {
-                    println_supress("Воспринято как <null>");
-                    break;
-                }
-                match = data.matches("(?:\\s*[a-zA-Zа-яА-ЯёЁ_!#@$0-9]+\\s*:\\s*[a-zA-Z]+\\s*,\\s*)*[a-zA-Zа-яА-ЯёЁ_!#@$0-9]+\\s*:\\s*[a-zA-Z]+\\s*");
-                if (!match) {
-                    println_supress("Введенное значение не не соответствует формату ввода, попробуйте ещё раз");
-                    continue;
-                }
-                var pre_data = data.trim().split("\\s*,\\s*");
-                opinions = new HashMap<>();
-                try {
-                    for (var el : pre_data) {
-                        var separated = el.split("\\s*:\\s*");
-                        opinions.put(separated[0], Opinion.valueOf(separated[1].substring(0, 1).toUpperCase() + separated[1].substring(1).toLowerCase(Locale.ROOT)));
-                    }
-                } catch (IllegalArgumentException ex) {
-                    println_supress("Введенное значение не не соответствует формату ввода (неверное значение отношения), попробуйте ещё раз");
-                    match = false;
-                }
-            }
-            return opinions;
-        }
-
         public Cmds.IDCharacter add_interactive() {
-            println_supress("Введите id персонажа");
-            String id = null;
-            Boolean match = false;
-            while (!match) {
-                id = scan.nextLine();
-                match = id.matches("\\s*[a-zA-Zа-яА-ЯёЁ_!#@$0-9]+\\s*");
-                if (!match) {
-                    println_supress("Введенное значение не может быть id, попробуйте ещё раз");
-                    continue;
-                }
-                match = !char_col.getCharacters().containsKey(id);
-                if (!match) {
-                    println_supress("Объект с данным id уже существует, попробуйте использовать update");
-                }
+            InteractiveInput inp;
+            if(scan != in_scan) inp = new InteractiveInput(scan,ServerExecutionModule::println_supress,ServerExecutionModule::print_supress);
+            else inp = new InteractiveInput(ServerWritingModule.class, ServerReadingModule.class);
+            var id = inp.id_interactive();
+            if (char_col.getCharacters().containsKey(id)) {
+                println_supress("Объект с данным id уже существует, попробуйте использовать update");
+                if(scan == in_scan)ServerWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Cmd,"",1,null));
+                return null;
             }
-            String name = name_interactive();
-            Sex sex = sex_interactive();
-            String quote = quote_interactive();
-            Double height = height_interactive();
-            Double weight = weight_interactive();
-            Popularity popul = popularity_interactive();
-            String description = description_interactive();
-            Double age = age_interactive();
-            Integer health = health_interactive();
-            Boolean isAnimeCharacter = isAnimeCharacter_interactive();
-            List<String> additionalNames = additionalnames_interactive();
-            HashMap<String, Opinion> opinions = opinions_interactive();
+            String name = inp.name_interactive();
+            Sex sex = inp.sex_interactive();
+            String quote = inp.quote_interactive();
+            Double height = inp.height_interactive();
+            Double weight = inp.weight_interactive();
+            Popularity popul = inp.popularity_interactive();
+            String description = inp.description_interactive();
+            Double age = inp.age_interactive();
+            Integer health = inp.health_interactive();
+            Boolean isAnimeCharacter = inp.isAnimeCharacter_interactive();
+            List<String> additionalNames = inp.additionalnames_interactive();
+            HashMap<String, Opinion> opinions = inp.opinions_interactive();
+            if(scan == in_scan)ServerWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Cmd,"",1,null));
             return new Cmds.IDCharacter(id, new DefaultCartoonPersonCharacter(name, sex, quote, opinions, additionalNames, height, weight, isAnimeCharacter, popul, description, age, health));
         }
 
         @InteractiveCommand(args = {0}, usage = {"add - добавление персонажа в коллекцию, значение вводится построчно:", "<id> - строка-индификатор", "<name> - имя", "<sex> пол персонажа, элемент из перечисления Sex", "<quote> - строка, цитата персонажа", "<height> - рост персонажа", "<weight> - вес персонажа", "<popularity> - популярность персонажа, элемент из перечисления Popularity", "<description> - строка, описание персонажа", "<age> - возраст персонажа", "<health> - значение здоровья персонажа в целочисленных условных единицах", "<isAnimeCharacter> - является ли アニメ персонажем, значение Yes/No", "<additionalNames> - строка, дополнительные имена персонажа, перечисление через запятую", "<opinions> - мнения о других персонажах (не обязательно из коллекции) в виде <имя>:<отношение>, <имя2>:<отношение2>... отношение - значение из перечисления Opinion"}, help = "Производит добавления элемента в коллекцию")
         public void add(List<String> argc) {
             var new_charac = add_interactive();
+            if(new_charac == null)return;
             char_col.add(new_charac.id, new_charac.character);
             feedback("Successful add");
         }
 
         @InteractiveCommand(args = {1}, usage = {"update <id>- изменение персонажа, содержащегося в коллекции, можно изменять конкретные поля, в остальных останутся предыдущие значения, end - для выхода", "<name> - имя", "<sex> пол персонажа, элемент из перечисления Sex", "<quote> - строка, цитата персонажа", "<height> - рост персонажа", "<weight> - вес персонажа", "<popularity> - популярность персонажа, элемент из перечисления Popularity", "<description> - строка, описание персонажа", "<age> - возраст персонажа", "<health> - значение здоровья персонажа в целочисленных условных единицах", "<isAnimeCharacter> - является ли アニメ персонажем, значение Yes/No", "<additionalNames> - строка, дополнительные имена персонажа, перечисление через запятую", "<opinions> - мнения о других персонажах (не обязательно из коллекции) в виде <имя>:<отношение>, <имя2>:<отношение2>... отношение - значение из перечисления Opinion"}, help = "Изменяет элемент в коллекции")
         public void update(List<String> argc) {
+            InteractiveInput inp;
+            if(scan != in_scan) inp = new InteractiveInput(scan,ServerExecutionModule::println_supress,ServerExecutionModule::print_supress);
+            else inp = new InteractiveInput(ServerWritingModule.class, ServerReadingModule.class);
             String id = argc.get(0);
             var charac = char_col.getCharacter(id);
             if (charac == null) {
                 error("Character not found");
                 return;
             }
-            boolean is_ended = false;
-            while (!is_ended) {
-                println_supress("Введите какое поле вы желаете изменить, иначе End для выхода");
-                println_supress("Варианты ввода: Name, Sex, Quote, Opinions, AdditionalNames, Height, Weight, Age, Health, IsAnimeCharacter, Popularity, Description");
-                String str = scan.nextLine().trim().toLowerCase();
+            while (true) {
+                var str = inp.type_interactive();
+                feedback("Updating: " + str);
                 switch (str) {
-                    case "name" -> charac.setName(name_interactive());
-                    case "sex" -> charac.setSex(sex_interactive());
-                    case "quote" -> charac.setQuote(quote_interactive());
-                    case "opinions" -> charac.setOpinions(opinions_interactive());
-                    case "additionalnames" -> charac.setAdditionalNames(additionalnames_interactive());
-                    case "height" -> charac.setHeight(height_interactive());
-                    case "weight" -> charac.setWeight(weight_interactive());
-                    case "age" -> charac.setAge(age_interactive());
-                    case "health" -> charac.setHealth(health_interactive());
-                    case "isanimecharacter" -> charac.setAnimeCharacter(isAnimeCharacter_interactive());
-                    case "popularity" -> charac.setPopularity(popularity_interactive());
-                    case "description" -> charac.setDescription(description_interactive());
+                    case "name" -> charac.setName(inp.name_interactive());
+                    case "sex" -> charac.setSex(inp.sex_interactive());
+                    case "quote" -> charac.setQuote(inp.quote_interactive());
+                    case "opinions" -> charac.setOpinions(inp.opinions_interactive());
+                    case "additionalnames" -> charac.setAdditionalNames(inp.additionalnames_interactive());
+                    case "height" -> charac.setHeight(inp.height_interactive());
+                    case "weight" -> charac.setWeight(inp.weight_interactive());
+                    case "age" -> charac.setAge(inp.age_interactive());
+                    case "health" -> charac.setHealth(inp.health_interactive());
+                    case "isanimecharacter" -> charac.setAnimeCharacter(inp.isAnimeCharacter_interactive());
+                    case "popularity" -> charac.setPopularity(inp.popularity_interactive());
+                    case "description" -> charac.setDescription(inp.description_interactive());
                     case "end" -> {
+                        if(in_scan == scan)ServerWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Cmd,"",1,null));
                         feedback("End update");
                         return;
                     }
@@ -645,7 +322,7 @@ public class ServerExecutionModule {
             }
             try {
                 File f = new File(argc.get(0));
-                scan = new FakeScanner(new Scanner(f));
+                scan = new InteractiveInput.FakeScanner(new Scanner(f));
                 feedback("Start executing script: " + argc.get(0));
                 supress_inp_invite = true;
                 executing_scripts.put(argc.get(0), new ScriptData(scan, cur_script));
@@ -686,7 +363,6 @@ public class ServerExecutionModule {
                     break;
                 case Cmd:
                     if (msg.code() == 2) {
-
                         return msg.body();
                     } else {
                         ServerExecutionModule.command_handle(msg);
@@ -704,7 +380,7 @@ public class ServerExecutionModule {
         char_col = CharacterCollection.getInstance();
         Cmds cmd_class = new Cmds();
         ServerConnectionModule.feedback("Interactive mode server started");
-        var in_scan = new FakeScanner((a) -> {
+        in_scan = new InteractiveInput.FakeScanner((a) -> {
             var res = getNextInteractive();
             if (res == null) a.close();
             a.add(res);
@@ -742,11 +418,12 @@ public class ServerExecutionModule {
                     if (prev != null) {
                         scan = executing_scripts.get(prev).file;
                         executing_scripts.remove(cur_script);
+                        feedback("End "+cur_script+" inner script execution");
                         cur_script = prev;
                     } else {
                         executing_scripts.remove(cur_script);
                         cur_script = null;
-                        feedback("End script execution");
+                        feedback("End all script executions");
                         break;
                     }
                 }

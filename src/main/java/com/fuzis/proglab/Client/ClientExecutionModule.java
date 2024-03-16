@@ -2,8 +2,10 @@ package com.fuzis.proglab.Client;
 
 import com.fuzis.proglab.Annotations.InteractiveCommand;
 import com.fuzis.proglab.AppData;
-import com.fuzis.proglab.Server.ServerExecutionModule;
+import com.fuzis.proglab.Enums.Opinion;
+import com.fuzis.proglab.InteractiveInput;
 
+import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 
@@ -25,15 +27,15 @@ public class ClientExecutionModule {
     public static Boolean exit=false;
 
     public static class ClientCmds {
-        public void print(Object a) {
+        public static void print(Object a) {
             System.out.print(a);
         }
 
-        public void println(Object a) {
+        public static void println(Object a) {
             System.out.println(a);
         }
 
-        public void println() {
+        public static void println() {
             System.out.println();
         }
 
@@ -102,6 +104,12 @@ public class ClientExecutionModule {
             ClientWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Msg, argc.get(0),0,null ));
             println("Message send");
         }
+        @InteractiveCommand(args={0},usage={"exit заканчивает работу клиента"},help="Завершение работы программы ")
+        public void exit(List<String> argc)
+        {
+            feedback("Exiting...");
+            exit = true;
+        }
     }
 
 
@@ -112,17 +120,82 @@ public class ClientExecutionModule {
         while(response.code() != 3)response = ClientReadingModule.read();
         commands = response.map();
     }
-
+    public static Scanner scan;
     public static void GoOutTheWindow() {
         System.out.println("Unbelievable shit really happens...");
         System.exit(666);
     }
+    public static String toStr(Object a)
+    {
+        if(a == null)return null;
+        try
+        {
+            var map = (HashMap<String, Opinion>) a;
+            StringBuilder res = new StringBuilder();
+            for(var el : map.keySet())
+            {
+                res.append(el).append(":").append(map.get(el)).append(",");
+            }
+            return res.toString();
+        }
+        catch (ClassCastException ex)
+        {
+            try
+            {
+                var arr = (ArrayList<String>) a;
+                StringBuilder res = new StringBuilder();
+                for(var el : arr)res.append(el);
+                return res.toString();
+            }
+            catch (ClassCastException ex2)
+            {
+                return a.toString();
+            }
 
+        }
+    }
+    public static void interactivecommand_handle(InteractiveInput inp,boolean type)
+    {
+        if(type)ClientWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Return,toStr(inp.type_interactive()),10,null));
+        else ClientWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Return,toStr(inp.id_interactive()),23,null));
+        while(true)
+        {
+            var req = ClientReadingModule.read();
+            if(req == null)
+            {
+                error("Server response error");
+            }
+            if(req.purpose() == AppData.TransferPurpose.Cmd && req.code()==1)
+            {
+                feedback("Interactive command execution ended");
+                break;
+            }
+            switch(req.code())
+            {
+                case 10->ClientWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Return,inp.type_interactive(),10,null));
+                case 11->ClientWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Return,toStr(inp.name_interactive()),11,null));
+                case 12->ClientWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Return,toStr(inp.sex_interactive()),12,null));
+                case 13->ClientWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Return,toStr(inp.quote_interactive()),13,null));
+                case 14->ClientWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Return,toStr(inp.height_interactive()),14,null));
+                case 15->ClientWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Return,toStr(inp.weight_interactive()),15,null));
+                case 16->ClientWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Return,toStr(inp.popularity_interactive()),16,null));
+                case 17->ClientWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Return,toStr(inp.age_interactive()),17,null));
+                case 18->ClientWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Return,toStr(inp.description_interactive()),18,null));
+                case 19->ClientWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Return,toStr(inp.health_interactive()),19,null));
+                case 20->ClientWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Return,toStr(inp.isAnimeCharacter_interactive()),20,null));
+                case 21->ClientWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Return,toStr(inp.additionalnames_interactive()),21,null));
+                case 22->ClientWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Return,toStr(inp.opinions_interactive()),22,null));
+                case 23->ClientWritingModule.write(new AppData.TransferData(AppData.TransferPurpose.Return,toStr(inp.id_interactive()),23,null));
+            }
+        }
+        var resp = ClientReadingModule.read();
+        System.out.print(resp.body());
+    }
     public static void start() {
         ClientCmds cmd_class = new ClientCmds();
         begin();
         feedback("Interactive mode started");
-        var scan = new Scanner(System.in);
+        scan = new Scanner(System.in);
         while (!exit && scan.hasNext()) {
             String pre = scan.nextLine().trim();
             if (pre.trim().isEmpty()) continue;
@@ -164,10 +237,11 @@ public class ClientExecutionModule {
                         var res = ClientReadingModule.read();
                         if(res == null)
                         {
-                            error("Server responce error");
+                            error("Server response error");
                         }
                         else
                         {
+                            //System.out.println(res);
                             switch(res.purpose())
                             {
                                 case Return:
@@ -177,11 +251,20 @@ public class ClientExecutionModule {
                                     }
                                     break;
                                 case Cmd:
-                                    error("Unexpected return: " + res);
+                                    var inp = new InteractiveInput(new InteractiveInput.FakeScanner(scan),ClientCmds::println,ClientCmds::print);
+                                    switch (res.code())
+                                    {
+                                        case 10-> interactivecommand_handle(inp,true);
+                                        case 23->interactivecommand_handle(inp,false);
+                                    }
                                     break;
                                 case Msg:
                                     feedback("Got message: " + res.body());
                                     break;
+                            }
+                            history.add(pre);
+                            if (history.size() > 14) {
+                                history.poll();
                             }
                         }
 
