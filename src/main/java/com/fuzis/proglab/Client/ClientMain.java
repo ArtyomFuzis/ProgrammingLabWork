@@ -23,10 +23,10 @@ public class ClientMain {
             ClientConnectionModule.error("Net permissions error");
         }
         try {
-            if (args.length >= 2) AppData.PORT = Integer.getInteger(args[1]);
+            if (args.length >= 2) AppData.PORT = Integer.parseInt(args[1]);
             else AppData.PORT = 4352;
         }
-        catch (ClassCastException ex)
+        catch (NumberFormatException ex)
         {
             ClientConnectionModule.error("Port not found, redirect to 4352");
             AppData.PORT = 4352;

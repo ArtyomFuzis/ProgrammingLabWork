@@ -28,7 +28,14 @@ public class ServerConnectionModule {
     {
         try {
             if (s_socket == null) {
-                s_socket = new ServerSocket(AppData.PORT);
+                try {
+                    s_socket = new ServerSocket(AppData.PORT);
+                }catch(IllegalArgumentException e)
+                {
+                    error("Wrong port number, set 4352");
+                    s_socket = new ServerSocket(4352);
+
+                }
                 feedback("Server Socket created");
             }
             Socket socket = s_socket.accept();

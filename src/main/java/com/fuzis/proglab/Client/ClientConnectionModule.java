@@ -25,7 +25,15 @@ public class ClientConnectionModule {
 
     public static boolean tryconnect() {
         try {
-            var addr = new InetSocketAddress(AppData.ADRESS, AppData.PORT);
+            InetSocketAddress addr;
+            try {
+                 addr = new InetSocketAddress(AppData.ADRESS, AppData.PORT);
+            }
+            catch (IllegalArgumentException e)
+            {
+                error("Invalid port, set to 4352");
+                addr = new InetSocketAddress(AppData.ADRESS, 4352);
+            }
             socket = SocketChannel.open(addr);
             socket.configureBlocking(false);
             return true;
